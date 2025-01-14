@@ -10,8 +10,16 @@
             "options_ajax" : "[CONTEXT_PATH]/web/json/console/app[APP_PATH]/forms/options"
         },
         {
-            "name":"filenameColumn",
-            "label":"@@org.joget.sample.WordDocToPdf.form.filenameColumn@@",
+            "name":"docFilenameColumn",
+            "label":"@@org.joget.sample.WordDocToPdf.form.docFilenameColumn@@",
+            "type":"selectbox",
+            "required" : "true",
+            "options_ajax_on_change" : "formDefId",
+            "options_ajax" : "[CONTEXT_PATH]/web/json/console/app[APP_PATH]/form/columns/options"
+        },
+        {
+            "name":"pdfFilenameColumn",
+            "label":"@@org.joget.sample.WordDocToPdf.form.pdfFilenameColumn@@",
             "type":"selectbox",
             "required" : "true",
             "options_ajax_on_change" : "formDefId",
